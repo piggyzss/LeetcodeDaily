@@ -1,36 +1,26 @@
 # 题目地址
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+https://leetcode.cn/problems/add-two-numbers/
 
 # 题目描述
-Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
+给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
 
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+请你将两个数相加，并以相同形式返回一个表示和的链表。
 
-Example 1:
+你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 
-Given nums = [1,1,2],
 
-Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
+# 示例
+示例 1：
+输入：l1 = [2,4,3], l2 = [5,6,4]
+输出：[7,0,8]
+解释：342 + 465 = 807.
 
-It doesn't matter what you leave beyond the returned length. Example 2:
+示例 2：
 
-Given nums = [0,0,1,1,1,2,2,3,3,4],
+输入：l1 = [0], l2 = [0]
+输出：[0]
 
-Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.
+示例 3：
 
-It doesn't matter what values are set beyond the returned length. Clarification:
-
-Confused why the returned value is an integer but your answer is an array?
-
-Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well.
-
-Internally you can think of this:
-
-// nums is passed in by reference. (i.e., without making a copy)
-int len = removeDuplicates(nums);
-
-// any modification to nums in your function would be known by the caller.
-// using the length returned by your function, it prints the first len elements.
-for (int i = 0; i < len; i++) {
-    print(nums[i]);
-}
+输入：l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+输出：[8,9,9,9,0,0,0,1]

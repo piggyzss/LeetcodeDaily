@@ -1,14 +1,26 @@
 # 题目地址
-https://leetcode.com/problems/maximum-subarray/
+https://leetcode.cn/problems/longest-substring-without-repeating-characters/
 
 # 题目描述
-Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+3. 无重复字符的最长子串
+给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
 
-Example:
 
-Input: [-2,1,-3,4,-1,2,1,-5,4],
-Output: 6
-Explanation: [4,-1,2,1] has the largest sum = 6.
-Follow up:
+# 示例
+示例 1:
 
-If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+输入: s = "abcabcbb"
+输出: 3 
+解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+示例 2:
+
+输入: s = "bbbbb"
+输出: 1
+解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+示例 3:
+
+输入: s = "pwwkew"
+输出: 3
+解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
+     请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+

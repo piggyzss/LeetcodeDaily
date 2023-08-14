@@ -10,11 +10,17 @@
 // 在枚举结束后，我们找到的最长的子串的长度即为答案。
 
 const maxSubstr = (str) => {
-    let max = 0, i = 0, j = 1
-    for(let i of str) {
-
+    let max = 0, start = 0, strMap = {}
+    for(let i = 0; i < str.length; i++) {
+        // 如果map出现了相同的字母，并且之前出现的字母的下标大于等于不重复序列最开始的下标就更新下标
+        if(strMap[str[i]] !== undefined && strMap[str[i]] >= start){
+            start = strMap[str[i]] + 1
+        }
+        strMap[str[i]] = i
+        max = Math.max(max, i - start + 1)
     }
+    return max
 }
 
-const str = ''
+const str = "pwwkew"
 console.log(maxSubstr(str))

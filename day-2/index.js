@@ -24,3 +24,4 @@ console.log(sum(l1, l2))
 // Array.from({length: len}, item => item*2) 数组加工
 // Array.from('foo') 字符串生成数组
 // Array.from(new　Set(arr)) 数组去重
+// Array.from({length: len1}, () =>  new Array(len2).fill(false))  生成一个 len1*len2 的二维数组
